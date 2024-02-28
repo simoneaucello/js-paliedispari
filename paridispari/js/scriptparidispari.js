@@ -17,17 +17,19 @@ function generateNumber(min, max){
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function whoWin(podUser){
-  let message = "";
+function result(sum){
 
-  if (sum % 2 === 0 && podUser === 'pari' || sum % 2 !== 0 && podUser === 'dispari'){
-    return message = 'You win!'
-  }else {
-    return message = 'You lost!'
-  };
+  if(sum % 2 === 0){
+    return 'pari'
+  }else if(sum % 2 !== 0){
+    return 'dispari'
+  }
 }
 
-console.log(whoWin(podUser));
-alert(whoWin(podUser))
+console.log(result(sum));
 
-
+if (result(sum) === podUser) {
+  alert('You win!')
+} else {
+  alert('You lose!')
+}
