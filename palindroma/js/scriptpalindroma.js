@@ -2,26 +2,23 @@
 const userWord = prompt('Inserisci una parola per sapere se è palindroma');
 
 
+
 function palindrome(userWord) {
 
-  let letters = userWord.split('');
-  // console.log(letters);
-
-  let lettersBack = letters.toReversed();
-  // console.log(lettersBack);
-
-  let reverseUserWord = lettersBack.join('');
-  // console.log(reverseUserWord);
-
-  let message = '';
-
-
-  if (reverseUserWord === userWord) {
-      return message = `La parola ${userWord} è palindroma`
-  }else {
-      return message = `La parola ${userWord} non è palindroma`
-  }
+  for (let i = 0; i < userWord.length / 2; i++){
+  if(userWord[i] !== userWord[userWord.length - i -1]){
+    return false;
+  } 
+}
+    return true;
 }
 
-alert(palindrome(userWord))
-console.log(palindrome(userWord));
+
+if (palindrome(userWord)) {
+  alert(`La parola ${userWord} è palindroma`)
+}else {
+  alert(`La parola ${userWord} non è palindroma`)
+}
+
+
+

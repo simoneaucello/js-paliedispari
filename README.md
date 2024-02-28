@@ -10,12 +10,8 @@ Creare una funzione per capire se la parola inserita è palindroma.
 ## Svolgimento
 1. prompt chiedere all’utente di inserire una parola 
 2. creare la variabile per la parola dell'utente  
-3. creare una nuova variabile e utilizzare .split per scomporre la parola in caratteri
-4. creare una nuova variabile e utilizzare .toReversed per invertire i caratteri
-5. creare una nuova variabile con la parola invertita utilizzando .join   
-6. creare una funzione per verificare se la parola è palindroma 
-    - IF i caretteri della parola e i caratteri invertiti sono uguali la parola è palindroma (messaggio)
-    - ELSE la parola non è palindroma (messaggio)
+3. creare un ciclo for per verificare se la seconda metà della parola è uguale alla prima metà
+4. stampo un messaggio, se è uguale è palindroma altrimenti non lo è
 
 
 PARI E DISPARI
